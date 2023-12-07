@@ -1,0 +1,36 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: #004cff;
+    background-color: #e3f2fd;
+    border-bottom: 2px solid #58585e ;
+}
+
+.navbar-brand{
+    margin: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+ul{
+    display: flex;
+    li{
+        margin: 0 20px;
+        font: 1em sans-serif;
+        font-weight: 600;
+    }
+}
+
+.cartwidget {
+    display: flex;
+    margin: 20px;
+}
+
+.saludo{
+    color: #060139;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    margin: 3em 1em;
+    font-family: sans-serif;
+}
