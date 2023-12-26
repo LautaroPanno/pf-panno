@@ -1,0 +1,15 @@
+.item-detail{
+  display: flex;
+  padding: 5% 10%;
+}
+
+.item-detail .imagen{
+  width: 30%;
+}
+
+.item-detail .texto{
+  width: 70%;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+}

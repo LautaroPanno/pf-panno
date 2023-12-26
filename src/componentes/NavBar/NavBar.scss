@@ -4,6 +4,7 @@
     color: #004cff;
     background-color: #e3f2fd;
     border-bottom: 2px solid #58585e ;
+    margin-bottom: 50px;
 }
 
 .navbar-brand{
@@ -11,6 +12,7 @@
     font-weight: 600;
     font-family: sans-serif;
 }
+
 
 ul{
     display: flex;
@@ -27,10 +29,9 @@ ul{
 }
 
 .saludo{
-    color: #060139;
-    font-size: 2em;
+    color: #0a0823;
+    font-size: 1.2em;
     text-align: center;
-    text-decoration: underline;
-    margin: 3em 1em;
+    margin: 90px 15px 15px 15px;
     font-family: sans-serif;
 }

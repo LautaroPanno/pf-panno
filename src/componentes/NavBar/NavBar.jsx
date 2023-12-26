@@ -1,13 +1,14 @@
 import CartWidget from "./CartWidget";
 import "./NavBar.scss";
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="navbar fixed-top container-fluid">
-        <a className="navbar-brand" href="#">
+      <Link to="/" className="navbar-brand">
           Limpialoom
-        </a>
+      </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,31 +23,29 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+        <Link to="/" className="nav-link" aria-current="page">
                 Inicio
-              </a>
+        </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/categorias/jabones">
                 Jabones
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/categorias/cepillos">
                 Cepillos
-              </a>
+                </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Quitamanchas
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+            <Link className="nav-link" to="/categorias/aspiradoras">
                 Aspiradoras
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
+            <Link className="nav-link" to="/categorias/perfumes">
+                Perfumes
+              </Link>
             </li>
           </ul>
         </div>
