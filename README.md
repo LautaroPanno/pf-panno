@@ -1,8 +1,6 @@
-
 # Ecommerce Plot Time
 
 Este proyecto es un e-commerce de artículos de indumentaria. Permite filtrar los productos entre distintas categorias y ver cada uno con sus detalles. También tiene integrada la función para añadirlos a un carrito de compras y modificar cada item. Al finalizar la compra se piden los datos del usuario para corroborar la compra realizada.
-
 
 ## Instalación
 
@@ -13,7 +11,6 @@ Instalar mi proyecto con npm
   npm run dev
 ```
 
-    
 # Librerías Utilizadas
 
 ## Cliente
@@ -32,11 +29,10 @@ Instalar mi proyecto con npm
 
 ![App Screenshot](/public/img/screenshot.png)
 
-
 ## Autor
 
 - [@lautaropanno](https://www.github.com/lautaropanno)
 
-
 ## Deployment
+
 - [Plot Time](https://)
