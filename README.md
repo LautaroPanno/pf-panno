@@ -1,6 +1,6 @@
 # Ecommerce Plot Time
 
-Este proyecto es un e-commerce de artículos de indumentaria. Permite filtrar los productos entre distintas categorias y ver cada uno con sus detalles. También tiene integrada la función para añadirlos a un carrito de compras y modificar cada item. Al finalizar la compra se piden los datos del usuario para corroborar la compra realizada.
+Este proyecto es un ecommerce de artículos de indumentaria. Permite filtrar los productos entre distintas categorias y ver cada uno con sus detalles. También tiene integrada la función para añadirlos a un carrito de compras y modificar cada item. Al finalizar la compra se piden los datos del usuario para corroborar la compra realizada.
 
 ## Instalación
 
