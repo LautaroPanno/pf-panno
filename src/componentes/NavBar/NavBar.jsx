@@ -1,60 +1,33 @@
 import CartWidget from "./CartWidget";
-import "./NavBar.scss";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="navbar fixed-top container-fluid">
-      <Link to="/" className="navbar-brand">
-          Limpialoom
+    <div id="navbar">
+      <Link to="/" className="brand">
+        Plot Time
       </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-        <Link to="/" className="nav-link" aria-current="page">
-                Inicio
-        </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/categorias/jabones">
-                Jabones
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/categorias/cepillos">
-                Cepillos
-                </Link>
-            </li>
-            <li className="nav-item">
-            <Link className="nav-link" to="/categorias/aspiradoras">
-                Aspiradoras
-              </Link>
-            </li>
-            <li className="nav-item">
-            <Link className="nav-link" to="/categorias/perfumes">
-                Perfumes
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="cartwidget">
-        <CartWidget />
-        <p>0</p>
-        </div>
-      </div>
-    </nav>
+      <ul>
+        <li>
+          <Link to="/">Inicio</Link>
+        </li>
+        <li>
+          <Link to="/categorias/gorras">Gorras</Link>
+        </li>
+        <li>
+          <Link to="/categorias/sombreros">Sombreros</Link>
+        </li>
+        <li>
+          <Link to="/categorias/pilusos">Pilusos</Link>
+        </li>
+        <li>
+          <Link to="/categorias/gorros">Gorros</Link>
+        </li>
+      </ul>
+      <CartWidget />
+    </div>
   );
 };
 

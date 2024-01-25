@@ -1,7 +1,10 @@
 .item-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.item-list image {
+  width: 10%;
+}

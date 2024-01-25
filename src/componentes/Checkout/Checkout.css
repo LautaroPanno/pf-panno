@@ -1,0 +1,78 @@
+.checkout {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formu h2 {
+  text-align: center;
+  margin: 2rem;
+}
+.formulario {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 1rem 2rem;
+}
+
+.formulario input {
+  font-size: 20px;
+  padding: 10px 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+.formulario button {
+  color: #ffff;
+  background-color: #1b1b67;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 0.5s;
+}
+
+.formulario button:hover {
+  background-color: #2d2d8e;
+}
+.orden,
+.orden p {
+  text-align: center;
+  margin: 2rem;
+  font-weight: bold;
+}
+.orden p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.boton-orden .vermasproductos {
+  width: 250px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid rgb(15, 15, 15);
+  border-radius: 20px;
+  color: black;
+  border: 1px solid black;
+  transition: all 0.3s;
+  text-align: center;
+}
+.boton-orden .vermasproductos:hover {
+  color: #ffff;
+  background-color: #241c60;
+}

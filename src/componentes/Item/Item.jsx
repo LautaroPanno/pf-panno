@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Item.css";
 
 const Item = ({ producto }) => {
-
   return (
     <div className="item">
       <img className="image" src={producto.imagen} alt={producto.nombre} />

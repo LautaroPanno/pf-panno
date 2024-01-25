@@ -1,74 +1,70 @@
-// import { createContext, useState } from "react";
+import { createContext, useState } from "react";
 
-// //Creamos un contexto de React llamado CartContex
-// const CartContext = createContext();
+const CartContext = createContext();
 
-// // Creamos un componente llamado CartProvider
-// // que servira como proveedor del contexto
-// const CartProvider = ({ children }) => {
-//   const [carrito, setCarrito] = useState([]);
+const CartProvider = ({ children }) => {
+  const [carrito, setCarrito] = useState([]);
 
-//   const añadirProducto = (producto) => {
-//     const condicion = estaEnElCarrito(producto.id);
-//     if (condicion) {
-//       //logica para sumar la cantidad si el producto ya estaba agregado
-//       const productosModificados = carrito.map((productoCarrito) => {
-//         if (productoCarrito.id === producto.id) {
-//           return {
-//             ...productoCarrito,
-//             cantidad: productoCarrito.cantidad + producto.cantidad,
-//           };
-//         } else {
-//           return productoCarrito;
-//         }
-//       });
+  const añadirProducto = (producto) => {
+    const condicion = estaEnElCarrito(producto.id);
+    if (condicion) {
+      const productosModificados = carrito.map((productoCarrito) => {
+        if (productoCarrito.id === producto.id) {
+          return {
+            ...productoCarrito,
+            cantidad: productoCarrito.cantidad + producto.cantidad,
+          };
+        } else {
+          return productoCarrito;
+        }
+      });
 
-//       setCarrito(productosModificados);
-//     } else {
-//       setCarrito([...carrito, producto]);
-//     }
-//   };
+      setCarrito(productosModificados);
+    } else {
+      setCarrito([...carrito, producto]);
+    }
+  };
 
-//   const estaEnElCarrito = (idProducto) => {
-//     return carrito.some((producto) => producto.id === idProducto);
-//   };
+  const estaEnElCarrito = (idProducto) => {
+    return carrito.some((producto) => producto.id === idProducto);
+  };
 
-//   const totalCantidad = () => {
-//     return carrito.reduce((total, producto) => total + producto.cantidad, 0);
-//   };
+  const totalCantidad = () => {
+    return carrito.reduce((total, producto) => total + producto.cantidad, 0);
+  };
 
-//   const totalPrecio = () => {
-//     return carrito.reduce(
-//       (total, producto) => total + producto.cantidad * producto.precio,
-//       0
-//     );
-//   };
+  const totalPrecio = () => {
+    return carrito.reduce(
+      (total, producto) => total + producto.cantidad * producto.precio,
+      0
+    );
+  };
 
-//   const borrarCarrito = () => {
-//     setCarrito([]);
-//   };
+  const borrarCarrito = () => {
+    setCarrito([]);
+  };
 
-//   const borrarProducto = (idProducto) => {
-//     const productosFiltrados = carrito.filter(
-//       (producto) => producto.id !== idProducto
-//     );
-//     setCarrito(productosFiltrados);
-//   };
+  const borrarProducto = (idProducto) => {
+    const productosFiltrados = carrito.filter(
+      (producto) => producto.id !== idProducto
+    );
+    setCarrito(productosFiltrados);
+  };
 
-//   return (
-//     <CartContext.Provider
-//       value={{
-//         carrito,
-//         añadirProducto,
-//         totalCantidad,
-//         borrarCarrito,
-//         borrarProducto,
-//         totalPrecio,
-//       }}
-//     >
-//       {children}
-//     </CartContext.Provider>
-//   );
-// };
+  return (
+    <CartContext.Provider
+      value={{
+        carrito,
+        añadirProducto,
+        totalCantidad,
+        borrarCarrito,
+        borrarProducto,
+        totalPrecio,
+      }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
+};
 
-// export { CartProvider, CartContext };
+export { CartProvider, CartContext };

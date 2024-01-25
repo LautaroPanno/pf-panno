@@ -1,52 +1,63 @@
-.item-list{
+.item-list {
   margin: 0 auto;
 }
 .item {
-    width: 250px;
-    border-radius: 4px;
-    margin: 10px 40px;
-    margin-bottom: 40px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 4px 23px 5px #0000002e;
-    -webkit-box-shadow: 2px 4px 23px 5px #0000002e;
-    -moz-box-shadow: 2px 4px 23px 5px #0000002e;
-  }
-  
-  .item .image {
-    width: 190px;
-    height: 190px;
-    padding: 30px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  .item .titulo {
-    margin: 5px;
-    font-weight: bold;
-  }
-  
-  .item .precio {
-    margin: 5px;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  .item .link {
-    width: 100%;
-    text-decoration: none;
-    margin: 5px 0;
-    color: rgb(225, 225, 225);
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    background-color: rgb(43, 94, 152);
-  }
-  
-  .item .link:hover {
-    cursor: pointer;
-    background-color: rgb(96, 134, 210);
-  }
+  width: 250px;
+  border-radius: 4px;
+  margin: 10px 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 4px 23px 5px #0000005b, inset 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.item .image {
+  width: 200px;
+  height: 190px;
+  object-fit: contain;
+  text-align: center;
+  margin: 5px auto;
+  transition: all 0.5s ease-in-out;
+}
+.item .image:hover {
+  scale: 1.1;
+}
+
+.item .titulo {
+  margin: 5px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.item .precio {
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.item .link {
+  width: 100%;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 5px 0;
+  color: rgb(225, 225, 225);
+  font-weight: bold;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px rgb(60, 59, 59) solid;
+  border-radius: 10px;
+  background-color: #1e4b82;
+  transition: all 0.5s;
+}
+
+.item .link:hover {
+  cursor: pointer;
+  background-color: #2b4c94;
+}
