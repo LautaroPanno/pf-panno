@@ -2,6 +2,10 @@
 
 Este proyecto es un ecommerce de artículos de indumentaria. Permite filtrar los productos entre distintas categorias y ver cada uno con sus detalles. También tiene integrada la función para añadirlos a un carrito de compras y modificar cada item. Al finalizar la compra se piden los datos del usuario para corroborar la compra realizada.
 
+## Screenshot
+
+![App Screenshot](/public/img/screenshot.png)
+
 ## Instalación
 
 Instalar mi proyecto con npm
@@ -24,10 +28,6 @@ Instalar mi proyecto con npm
 ## Alojamiento
 
 - **Firebase Firestore:** Plataforma en la nube utilizada para alojar la base de datos.
-
-## Screenshot
-
-![App Screenshot](/public/img/screenshot.png)
 
 ## Autor
 
