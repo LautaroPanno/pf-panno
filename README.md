@@ -32,7 +32,3 @@ Instalar mi proyecto con npm
 ## Autor
 
 - [@lautaropanno](https://www.github.com/lautaropanno)
-
-## Deployment
-
-- [Plot Time](https://)
